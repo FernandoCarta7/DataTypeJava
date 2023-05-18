@@ -5,26 +5,17 @@ public class DataTypeMain {
     public static void main(String[] args) {
         //Tipos de datos en Java
         //Declaración de los diferentes tipos de datos en Java
-        byte Byte;
-        short numeroShort;
-        int numeroEntero;
-        long numeroLong;
-        float numeroFloat;
-        double numeroDouble;
-        char character;
-        boolean booleano;
-        String string;
+        byte Byte = 1;
+        short numeroShort = 100, numeroShort2 = 321;
+        int numeroEntero = 1001001, numeroEntero2 = 100;
+        long numeroLong = 1001001001, numeroLong2 = 32412;
+        float numeroFloat = (float) 150.1, numeroFloat2 = (float) 1000.1;
+        double numeroDouble = 150051.51, numeroDouble2 = 10230321.82;
+        char character = 'a';
+        boolean booleano = false;
+        String string = "Esto es una cadena STRING ";
 
-        //Asignación a cada variable declarada
-        Byte = 2;
-        numeroShort = 13;
-        numeroEntero = 27;
-        numeroLong = 1237;
-        numeroFloat = numeroLong / numeroEntero;
-        numeroDouble = 12412.21;
-        character = 'ñ'; //Este tipo de dato puede tener cualquier valor de caracter
-        booleano = true; //este tipo dato puede tener los valores de true  o false
-
+       
         //Imprimir por consola el rango de cada variable
         System.out.println("--------------------");
         System.out.println("Rango del SHORT: min = " + Short.MIN_VALUE + " MAX = " + Short.MAX_VALUE);
@@ -47,5 +38,40 @@ public class DataTypeMain {
         System.out.println("Caracter: " + character);
         System.out.println("Booleano: " + booleano);
         System.out.println("--------------------" + "\n");
+        
+        
+        
+         //Suma
+        System.out.println("++++++++++SUMA++++++++++\n");
+        System.out.println("suma de numeros Short:\t" + numeroShort + numeroShort2);
+        System.out.println("suma de numeros Enteros:\t" + numeroEntero + numeroEntero2);
+        System.out.println("suma de numeros Long\t" + numeroLong + numeroLong2);
+        System.out.println("suma de numeros float\t" + numeroFloat + numeroFloat2);
+        System.out.println("suma de numeros Double:\t" + numeroDouble + numeroDouble2);
+        System.out.println("Concatenación de String con caracter\t" + string + character + "\n");
+
+        //Resta
+        System.out.println("----------RESTA----------\n");
+        System.out.println("Resta de numeros Short:\t" + (numeroShort - numeroShort2));
+        System.out.println("Resta de numeros Enteros:\t" + (numeroEntero - numeroEntero2));
+        System.out.println("Resta de numeros Long\t" + (numeroLong - numeroLong2));
+        System.out.println("Resta de numeros float\t" + (numeroFloat - numeroFloat2));
+        System.out.println("Resta de numeros Double:\t" + (numeroDouble - numeroDouble2) + "\n");
+
+        //Multiplicación
+        System.out.println("**********MULTIPLICACIÓN**********\n");
+        System.out.println("Resta de numeros Short:\t" + (numeroShort * numeroShort2));
+        System.out.println("Resta de numeros Enteros:\t" + (numeroEntero * numeroEntero2));
+        System.out.println("Resta de numeros Long\t" + (numeroLong * numeroLong2));
+        System.out.println("Resta de numeros float\t" + (numeroFloat * numeroFloat2));
+        System.out.println("Resta de numeros Double:\t" + (numeroDouble * numeroDouble2) + "\n");
+
+        //División
+        System.out.println("**********DIVISIÓN**********\n");
+        System.out.println("Resta de numeros Short:\t" + (numeroShort / numeroShort2));
+        System.out.println("Resta de numeros Enteros:\t" + (numeroEntero / numeroEntero2));
+        System.out.println("Resta de numeros Long\t" + (numeroLong / numeroLong2));
+        System.out.println("Resta de numeros float\t" + (numeroFloat / numeroFloat2));
+        System.out.println("Resta de numeros Double:\t" + (numeroDouble / numeroDouble2) + "\n");
     }
 }
