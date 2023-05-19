@@ -14,8 +14,7 @@ public class DataTypeMain {
         char character = 'a';
         boolean booleano = false;
         String string = "Esto es una cadena STRING ";
-
-       
+        
         //Imprimir por consola el rango de cada variable
         System.out.println("--------------------");
         System.out.println("Rango del SHORT: min = " + Short.MIN_VALUE + " MAX = " + Short.MAX_VALUE);
@@ -39,9 +38,7 @@ public class DataTypeMain {
         System.out.println("Booleano: " + booleano);
         System.out.println("--------------------" + "\n");
         
-        
-        
-         //Suma
+        //Suma
         System.out.println("++++++++++SUMA++++++++++\n");
         System.out.println("suma de numeros Short:\t" + numeroShort + numeroShort2);
         System.out.println("suma de numeros Enteros:\t" + numeroEntero + numeroEntero2);
